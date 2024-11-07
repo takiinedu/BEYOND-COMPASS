@@ -12,14 +12,13 @@ header.innerHTML = `
                 <li id="about" class="header__nav-item"><a class="header__nav-link" href="./about.html">ABOUT</a></li>
                 <li id="services" class="header__nav-item"><a class="header__nav-link" href="./services.html">SERVICES</a></li>
                 <li id="contact" class="header__nav-item"><a class="header__nav-link" href="./contact.html">CONTACT</a></li>
-                <li id="our-products" class="header__nav-item"><a class="header__nav-link" href="./our-products.html">OUR PRODUCTS</a></li>
+                <li id="ourProducts" class="header__nav-item"><a class="header__nav-link" href="./ourProducts.html">OUR PRODUCTS</a></li>
                 <li id="news" class="header__nav-item"><a class="header__nav-link" href="./news.html">NEWS</a></li>
                 <li id="our-team" class="header__nav-item"><a class="header__nav-link" href="./our-team.html">OUR TEAM</a></li>
                 <li id="blogs" class="header__nav-item"><a class="header__nav-link" href="./blogs.html">BLOGS</a></li>
             </ul>
         </div>
 `+ header.innerHTML;
-
 let pathname = window.location.pathname.replace("public", '');
 pathname = pathname.replace(/\//g, '');
 pathname = pathname.replace(".html", '');

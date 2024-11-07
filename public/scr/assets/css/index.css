@@ -56,7 +56,6 @@
 }
 
 .content__right {
-    z-index: -1;
     width: 692px;
     height: 541px;
     position: relative;
