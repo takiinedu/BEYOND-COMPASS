@@ -1,0 +1,37 @@
+project-folder/
+├── public/                        # Thư mục chứa các file tĩnh
+│   ├── index.html                 # Trang HTML chính
+│   ├── images/                    # Hình ảnh tĩnh
+│   ├── fonts/                     # Phông chữ
+│   ├── favicon.ico                # Biểu tượng trang web
+│   └── robots.txt                 # Cấu hình cho các công cụ tìm kiếm
+├── src/                           # Thư mục mã nguồn chính của ứng dụng
+│   ├── assets/                    # Thư mục chứa tài nguyên chung (CSS, JS, hình ảnh, v.v)
+│   │   ├── css/                   # CSS (có thể chia thành các phần như themes, layout, components, v.v)
+│   │   ├── js/                    # JavaScript (các thư viện chung, các file tiện ích)
+│   │   ├── images/                # Hình ảnh (có thể chia theo các tính năng như logo, icons)
+│   │   └── fonts/                 # Font chữ (nếu cần)
+│   ├── componencts/                # Các component tái sử dụng (header, footer, navigation)
+│   │   ├── Header.js              # Component Header
+│   │   ├── Footer.js              # Component Footer
+│   │   └── Navbar.js              # Component Navbar
+│   ├── pages/                     # Các trang riêng biệt (Home, Shop, Contact, v.v)
+│   │   ├── Home.js                # Trang Home
+│   │   ├── Shop.js                # Trang Shop
+│   │   ├── Contact.js             # Trang Contact
+│   │   └── About.js               # Trang About
+│   ├── services/                  # Các dịch vụ API hoặc logic nghiệp vụ
+│   │   ├── api.js                 # Giao tiếp API
+│   │   ├── authService.js         # Xử lý đăng nhập, xác thực
+│   │   └── productService.js      # Xử lý dữ liệu sản phẩm
+│   ├── utils/                     # Các hàm tiện ích chung (helper functions, validations, v.v)
+│   │   ├── validate.js            # Các hàm xác thực
+│   │   └── formatDate.js          # Hàm định dạng ngày tháng
+│   ├── App.js                     # Component gốc của ứng dụng
+│   ├── index.js                   # Entry point của ứng dụng React/Vue
+│   └── routes.js                  # Định nghĩa các routes cho ứng dụng (nếu dùng React Router hoặc Vue Router)
+├── .env                           # Biến môi trường
+├── .gitignore                     # Các file hoặc thư mục bị loại trừ khỏi Git
+├── package.json                   # Các thông tin về dự án và các thư viện cần cài đặt
+├── README.md                      # Mô tả về dự án
+└── webpack.config.js              # Cấu hình Webpack (nếu dùng)

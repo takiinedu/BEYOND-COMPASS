@@ -1,0 +1,126 @@
+.content {
+    width: calc(100% - 104 * 2px);
+    margin: 96px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__title {
+    width: 527px;
+    height: 198px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    color: #2A367C;
+}
+
+.content__comment {
+    margin-block: 32px;
+    width: 527px;
+    height: 108px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #666666;
+}
+
+.content__btn {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    background: #4D63E2;
+    border-radius: 100px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    letter-spacing: 0.015em;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.content__btn:hover{
+    background: #3746A0;
+}
+.content__btn svg {
+    margin-left: 4px;
+}
+
+.content__right {
+    width: 692px;
+    height: 541px;
+    position: relative;
+}
+
+.content__right-imgLarge {
+    border-radius: 26.5px;
+    border: 3px solid #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 528px;
+    height: 469px;
+    background-image: url(../img/index/content/imgLarge.png);
+    background-size: calc(100% + 90px);
+    background-position: center;
+}
+
+.content__right-imgLarge:hover {
+    filter: drop-shadow(0px 0px 40px rgba(77, 99, 226, 0.4));
+    width: 560px;
+    height: 497px;
+    border: none;
+    background-size: calc(100% + 90px);
+    border: 3px solid #FFFFFF;
+}
+
+.content__right-imgSmall {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 316px;
+    height: 281px;
+    background-image: url(../img/index/content/imgSmall.png);
+    background-size: calc(100% + 80px);
+    background-position: center;
+}
+
+.content__right-filter {
+    position: absolute;
+    bottom: 37px;
+    left: 0;
+}
+
+.content__filter {
+    position: absolute;
+}
+
+.content__filter1 {
+    top: 698px;
+    left: 0;
+}
+
+.content__filter2 {
+    top: 276px;
+    right: 0px;
+}
+
+.footer_ {
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 144.11px;
+}
+
+.banner {
+    width: 100%;
+    height: 204px;
+}
