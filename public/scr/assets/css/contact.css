@@ -1,0 +1,127 @@
+.header {
+    box-shadow: 0px 8px 24px 0px #0000000D;
+}
+content{
+    margin: auto;
+    width: calc(100% - 206px);
+    display: block;
+}
+.section1__title {
+    width: 839px;
+    height: 144px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #3B3B3B;
+    margin: 104px auto 20px auto;
+}
+
+.timebox {
+    display: flex;
+    width: 342px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.timebox p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #B0B0B0;
+}
+
+.banner {
+    margin-top: 40px;
+    width:100%;
+    height: 512px;
+}
+
+.section2 {
+    width:100%;
+    margin: 104px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2-left {
+    width: calc(100% - 90px - 437px);
+}
+
+.section2-left__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #3B3B3B;
+}
+
+.section2-left__container {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #666666;
+    margin-block: 32px;
+}
+
+.section2-left img {
+    width: 100%;
+}
+.section2-right{
+    width: 437px;
+    box-sizing: border-box;
+    padding: 20px 24px;
+}
+.section2-right ul {
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #3B3B3B;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 24px;
+}
+.section2-right li p{
+    width: 349px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #B0B0B0;
+    align-items: center;
+}
+.section2-right svg{
+    position: relative;
+    translate: 0px 7.5px;
+}
+.section2-right .active {
+    color: #3B3B3B;
+}
+.section3{
+    width: 100%;
+    margin: 104px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section3 .card-item{
+    width: ;
+}

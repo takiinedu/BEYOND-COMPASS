@@ -8,14 +8,15 @@ header.innerHTML = `
                     fill="#2A367C" />
             </svg>
             <ul class="header__nav">
-                <li id="home" class="header__nav-item"><a class="header__nav-link" href="./index.html">HOME</a></li>
-                <li id="about" class="header__nav-item"><a class="header__nav-link" href="./about.html">ABOUT</a></li>
-                <li id="services" class="header__nav-item"><a class="header__nav-link" href="./services.html">SERVICES</a></li>
-                <li id="contact" class="header__nav-item"><a class="header__nav-link" href="./contact.html">CONTACT</a></li>
-                <li id="ourProducts" class="header__nav-item"><a class="header__nav-link" href="./ourProducts.html">OUR PRODUCTS</a></li>
-                <li id="news" class="header__nav-item"><a class="header__nav-link" href="./news.html">NEWS</a></li>
-                <li id="our-team" class="header__nav-item"><a class="header__nav-link" href="./our-team.html">OUR TEAM</a></li>
-                <li id="blogs" class="header__nav-item"><a class="header__nav-link" href="./blogs.html">BLOGS</a></li>
+                <li id="home" class="header__nav-item" >
+                    <a class="header__nav-link" href="./index.html" onclick="handleClick('./index.html')">HOME</a>
+                </li>
+                <li id="about" class="header__nav-item"><a class="header__nav-link" href="./about.html" onclick="handleClick('./about.html')">ABOUT</a></li>
+                <li id="contact" class="header__nav-item"><a class="header__nav-link" href="./contact.html" onclick="handleClick('./contact.html')">CONTACT</a></li>
+                <li id="ourProducts" class="header__nav-item"><a class="header__nav-link" href="./ourProducts.html" onclick="handleClick('./ourProducts.html')">OUR PRODUCTS</a></li>
+                <li id="news" class="header__nav-item"><a class="header__nav-link" href="./news.html" onclick="handleClick('./news.html')">NEWS</a></li>
+                <li id="ourTeam" class="header__nav-item"><a class="header__nav-link" href="./our-team.html" onclick="handleClick('./ourTeam.html')>OUR TEAM</a></li>
+                <li id="blogs" class="header__nav-item"><a class="header__nav-link" href="./blogs.html"  onclick="handleClick('./blogs.html')>BLOGS</a></li>
             </ul>
         </div>
 `+ header.innerHTML;
@@ -30,3 +31,24 @@ console.log(pathname);
 const element = document.querySelector(`#${pathname}`);
 element.classList.remove('header__nav-item');
 element.classList.add('active');
+
+// Hàm kiểm tra sự tồn tại của trang
+async function checkPageExists(url) {
+    try {
+      const response = await fetch(url, { method: 'HEAD' });
+      if (!response.ok) {
+        // Chuyển đến trang 404 nếu không tìm thấy
+        window.location.href = './404.html';
+      }
+    } catch (error) {
+      console.error('Lỗi khi kiểm tra đường dẫn:', error);
+      window.location.href = './404.html';
+    }
+  }
+  
+  // Kiểm tra trang khi nhấn vào liên kết
+  function handleClick(url) {
+    console.log("hello");
+    // event.preventDefault(); // Ngăn chặn việc tải trang mặc định
+    checkPageExists(url);
+  }

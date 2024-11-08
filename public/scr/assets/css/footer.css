@@ -29,6 +29,7 @@
 
 .footer__information--right .footer__information--right_info {
     display: flex;
+    gap: 40px;
 }
 
 .footer__list-info {
