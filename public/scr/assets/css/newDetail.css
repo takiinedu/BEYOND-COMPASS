@@ -197,8 +197,11 @@ content {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     letter-spacing: 0.015em;
     color: #4D63E2;
+}
+.section3 .card-item__btn:hover{
+    border-bottom: 1px solid #3746A0
 }
