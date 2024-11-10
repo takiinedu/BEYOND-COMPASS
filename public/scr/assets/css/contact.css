@@ -59,7 +59,7 @@
 .contact .ip:nth-of-type(2) h4::after,
 .contact .ip:nth-of-type(3) h4::after,
 .contact .ip:nth-of-type(5) h4::after {
-    content: "*";
+    content: " *";
     color: #F04438;
 }
 
