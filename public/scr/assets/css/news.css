@@ -137,7 +137,6 @@
 
 .section3 .card-item {
     width: 389.67px;
-    cursor: pointer;
 }
 
 .section3 .card-item img {
@@ -230,5 +229,6 @@
     border: 2px solid #3746A0;
 }
 .card-item__btn:hover, .btn:hover{
+    cursor: pointer;
     border-bottom: 1px solid #3746A0
 }
