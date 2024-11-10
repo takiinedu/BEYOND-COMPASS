@@ -1,0 +1,234 @@
+.banner {
+    width: 100%;
+    height: 400px;
+}
+
+.section1__title--sarge {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2A367C;
+}
+
+.section1__title--small {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #666666;
+    margin-block: 12px;
+}
+
+.section1 {
+    position: relative;
+    padding-block: 24px;
+    background: #F9F8F8;
+    margin-bottom: 60px;
+    translate: 0 -5px;
+}
+
+.section1__filter {
+    position: absolute;
+}
+
+.section1__filter1 {
+    bottom: 0;
+    left: 68px;
+}
+
+.section1__filter2 {
+    width: 120px;
+    top: 0;
+    right: 30px;
+}
+
+.section1__filter3 {
+    bottom: 48px;
+    right: 100px;
+    width: 60px;
+    height: 60px;
+}
+
+.section1__filter4 {
+    top: 24px;
+    translate: -50% 0px;
+    left: calc(50% - 135px);
+    z-index: -1;
+}
+
+.section2 {
+    display: flex;
+    width: calc(100% - 208px);
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    background: #FAFAFA;
+}
+.section2 .container{
+    padding-inline: 32px;
+}
+.section2 .title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #3B3B3B;
+}
+.section2 .content {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #666666;
+    margin-top: 4px;
+    padding-right: 24px;
+}
+
+.section2 .date {
+    margin-block: 12px 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #B0B0B0;
+}
+
+.section2 .btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.015em;
+    color: #4D63E2;
+}
+
+.section2 img {
+    width: 604.5px;
+}
+
+.section3 {
+    width: calc(100% - 208px);
+    margin: 104px auto 60px auto;
+}
+
+.section3__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(31px);
+}
+
+.section3 .card-item {
+    width: 389.67px;
+    cursor: pointer;
+}
+
+.section3 .card-item img {
+    width: 100%;
+}
+
+.section3 .card-item__title {
+    width: 389.67px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #3B3B3B;
+    margin-block: 24px 4px;
+}
+
+.section3 .card-item__comment {
+    width: 389.67px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #666666;
+}
+
+.section3 .card-item__date {
+    margin-block: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #B0B0B0;
+    display: flex;
+    align-items: center;
+}
+
+.section3 .card-item__btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.015em;
+    color: #4D63E2;
+}
+
+.section3_nav_number {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    width: calc(100% - 208px);
+    margin: auto;
+    justify-content: flex-end;
+}
+
+.section3_nav_number li {
+    border: 1.5px solid #EBEBEB;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.015em;
+    color: #3B3B3B;
+    margin-bottom: 60px;
+}
+
+.section3_nav_number .first {
+    background: #B0B0B0;
+    border-width: 0px;
+}
+
+.section3_nav_number .active {
+    color: #3746A0;
+    border: 2px solid #3746A0;
+}
+.card-item__btn:hover, .btn:hover{
+    border-bottom: 1px solid #3746A0
+}

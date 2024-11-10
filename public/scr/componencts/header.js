@@ -12,11 +12,11 @@ header.innerHTML = `
                     <a class="header__nav-link" href="./index.html" onclick="handleClick('./index.html')">HOME</a>
                 </li>
                 <li id="about" class="header__nav-item"><a class="header__nav-link" href="./about.html" onclick="handleClick('./about.html')">ABOUT</a></li>
-                <li id="contact" class="header__nav-item"><a class="header__nav-link" href="./contact.html" onclick="handleClick('./contact.html')">CONTACT</a></li>
                 <li id="ourProducts" class="header__nav-item"><a class="header__nav-link" href="./ourProducts.html" onclick="handleClick('./ourProducts.html')">OUR PRODUCTS</a></li>
                 <li id="news" class="header__nav-item"><a class="header__nav-link" href="./news.html" onclick="handleClick('./news.html')">NEWS</a></li>
-                <li id="ourTeam" class="header__nav-item"><a class="header__nav-link" href="./our-team.html" onclick="handleClick('./ourTeam.html')>OUR TEAM</a></li>
-                <li id="blogs" class="header__nav-item"><a class="header__nav-link" href="./blogs.html"  onclick="handleClick('./blogs.html')>BLOGS</a></li>
+                <li id="ourTeam" class="header__nav-item"><a class="header__nav-link" href="./ourTeam.html" onclick="handleClick('./ourTeam.html')">OUR TEAM</a></li>
+                <li id="contact" class="header__nav-item"><a class="header__nav-link" href="./contact.html" onclick="handleClick('./contact.html')">CONTACT</a></li>
+                <li id="blogs" class="header__nav-item"><a class="header__nav-link" href="./blogs.html"  onclick="handleClick('./blogs.html')">BLOGS</a></li>
             </ul>
         </div>
 `+ header.innerHTML;
@@ -24,7 +24,7 @@ let pathname = window.location.pathname.replace("public", '');
 pathname = pathname.replace(/\//g, '');
 pathname = pathname.replace(".html", '');
 if (pathname == "index" || pathname == "") {
-    pathname = "home";
+  pathname = "home";
 }
 
 console.log(pathname);
@@ -34,21 +34,21 @@ element.classList.add('active');
 
 // Hàm kiểm tra sự tồn tại của trang
 async function checkPageExists(url) {
-    try {
-      const response = await fetch(url, { method: 'HEAD' });
-      if (!response.ok) {
-        // Chuyển đến trang 404 nếu không tìm thấy
-        window.location.href = './404.html';
-      }
-    } catch (error) {
-      console.error('Lỗi khi kiểm tra đường dẫn:', error);
+  try {
+    const response = await fetch(url, { method: 'HEAD' });
+    if (!response.ok) {
+      // Chuyển đến trang 404 nếu không tìm thấy
       window.location.href = './404.html';
     }
+  } catch (error) {
+    console.error('Lỗi khi kiểm tra đường dẫn:', error);
+    window.location.href = './404.html';
   }
-  
-  // Kiểm tra trang khi nhấn vào liên kết
-  function handleClick(url) {
-    console.log("hello");
-    // event.preventDefault(); // Ngăn chặn việc tải trang mặc định
-    checkPageExists(url);
-  }
+}
+
+// Kiểm tra trang khi nhấn vào liên kết
+function handleClick(url) {
+  console.log("hello");
+  // event.preventDefault(); // Ngăn chặn việc tải trang mặc định
+  checkPageExists(url);
+}
