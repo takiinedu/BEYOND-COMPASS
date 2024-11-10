@@ -4,7 +4,9 @@
     padding: 80px 104px;
     box-sizing: border-box;
 }
-
+body{
+    overflow-x: hidden;
+}
 .footer__information {
     display: flex;
     justify-content: space-between;

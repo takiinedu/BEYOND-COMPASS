@@ -1,174 +1,77 @@
-.header {
-    box-shadow: 0px 8px 24px 0px #0000000D;
+.banner {
+    width: 100%;
+    height: 400px;
 }
 
-content {
-    margin: auto;
-    width: calc(100% - 206px);
-    display: block;
+.contact {
+    width: 100%;
+    padding: 0 104px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 60px 80px;
 }
 
-.section1__title {
-    width: 839px;
-    height: 144px;
+.contact .left {
+    box-sizing: border-box;
+    border-radius: 24px;
+    padding: 64px;
+    width: calc(100% - 100px - 566.5px);
+    box-shadow: 0px 0px 40px 0px #00000014;
+}
+
+.contact h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 150%;
-    text-align: center;
     letter-spacing: 0.01em;
-    color: #3B3B3B;
-    margin: 104px auto 20px auto;
+    color: #2A367C;
 }
 
-.timebox {
-    display: flex;
-    width: 342px;
-    margin: auto;
-    justify-content: space-between;
-}
-
-.timebox p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
-    letter-spacing: 0.01em;
-    color: #B0B0B0;
-}
-
-.banner {
-    margin-top: 40px;
-    width: 100%;
-    height: 512px;
-}
-
-.section2 {
-    width: 100%;
-    margin: 104px auto 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.section2-left {
-    width: calc(100% - 90px - 437px);
-}
-
-.section2-left__title {
+.contact h3 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
-    line-height: 150%;
-    letter-spacing: 0.01em;
-    color: #3B3B3B;
-}
-
-.section2-left__container {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
+    font-size: 32px;
     line-height: 150%;
     letter-spacing: 0.01em;
     color: #666666;
-    margin-block: 32px;
 }
 
-.section2-left img {
-    width: 100%;
-}
-
-.section2-right {
-    width: 437px;
-    box-sizing: border-box;
-    padding: 20px 24px;
-}
-
-.section2-right ul {
-    list-style: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 150%;
-    letter-spacing: 0.01em;
-    color: #3B3B3B;
-}
-
-.section2-right li {
-    display: flex;
-    justify-content: space-between;
-    margin-block: 24px;
-}
-
-.section2-right li p {
-    width: 349px;
+.contact h4 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0.01em;
-    color: #B0B0B0;
-    align-items: center;
-}
-
-.section2-right svg {
-    position: relative;
-    translate: 0px 7.5px;
-}
-
-.section2-right .active {
-    color: #3B3B3B;
-}
-
-.section3__title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
     line-height: 150%;
     letter-spacing: 0.01em;
     color: #3B3B3B;
+}
+
+.contact .ip {
     margin-bottom: 24px;
 }
 
-.section3 {
-    width: 100%;
-    margin: 104px auto 60px auto;
+.contact .ip:nth-of-type(1) h4::after,
+.contact .ip:nth-of-type(2) h4::after,
+.contact .ip:nth-of-type(3) h4::after,
+.contact .ip:nth-of-type(5) h4::after {
+    content: "*";
+    color: #F04438;
 }
 
-.section3__list {
-    width: 100%;
+.contact input {
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-}
-
-.section3 .card-item {
-    width: 389.67px;
-}
-
-.section3 .card-item img {
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
     width: 100%;
-}
-
-.section3 .card-item__title {
-    width: 389.67px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 150%;
-    letter-spacing: 0.01em;
-    color: #3B3B3B;
-    margin-block: 24px 4px;
-}
-
-.section3 .card-item__comment {
-    width: 389.67px;
+    height: 56px;
+    border: 1px solid #B0B0B0;
+    border-radius: 4px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -176,29 +79,108 @@ content {
     line-height: 150%;
     letter-spacing: 0.01em;
     color: #666666;
+    padding: 16px;
+    margin-top: 12px;
 }
 
-.section3 .card-item__date {
-    margin-block: 12px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.01em;
-    color: #B0B0B0;
+button {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-}
-
-.section3 .card-item__btn {
+    padding: 12px 16px;
+    background: #4D63E2;
+    border-radius: 100px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.015em;
-    color: #4D63E2;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 12px;
+}
+button:hover {
+    background: #3746A0;
+}
+input:focus {
+    background: linear-gradient(white 0 0) padding-box, linear-gradient(125.31deg, #F2015B 0%, #ED02F1 47.92%, #04038D 100%) border-box;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.banner input::placeholder {
+    color: #666666;
+}
+
+.contact .right {
+    margin-top: 64px;
+    width: 566.5px;
+}
+
+.contact .right .list-info {
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #3746A0;
+}
+
+.contact .right .wrapper {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.contact .right .wrapper div {
+    width: 24px;
+    height: 24px;
+    background: #8896EC;
+}
+
+.contact .right .list-info li {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.contact #first {
+    margin-top: 0;
+}
+
+.contact .list-info li p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #3B3B3B;
+}
+
+.positon {
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 104px;
+}
+
+.positon h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #3746A0;
+}
+
+.positon img {
+    width: 100%;
+    margin-block: 40px 64px;
 }
